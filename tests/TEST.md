@@ -74,7 +74,7 @@
 ============================= test session starts ==============================
 platform linux -- Python 3.10.12, pytest-9.0.2, pluggy-1.6.0 -- /usr/bin/python3
 cachedir: .pytest_cache
-rootdir: /root/work/dingtalk-cli/.worktree/feat-dingtalk-cli-v1
+rootdir: <repo_root>
 plugins: anyio-4.12.1
 collecting ... collected 19 items
 
@@ -110,7 +110,7 @@ tests/test_full_e2e.py::test_workbook_live SKIPPED
 
 ### 真实钉钉 E2E 验证
 
-使用本机 `~/.dingtalk-skills/config` 中的 `APP_KEY / APP_SECRET / OPERATOR_ID`，并指定测试知识库 `workspace_id=9Bv51S4ZVjYEDgv3` 执行。
+使用本机已有的 `APP_KEY / APP_SECRET / OPERATOR_ID`，并指定受控测试知识库执行。
 
 ```text
 tests/test_core.py: 17 passed

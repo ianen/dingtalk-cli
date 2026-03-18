@@ -1,6 +1,6 @@
 # 钉钉文档 API 参考
 
-本文件整理自原始 skill `/root/.agents/skills/dingtalk-document`，供 `dingtalk-cli` 项目内独立维护。
+本文件整理自原始 `dingtalk-document` skill 文档，供 `dingtalk-cli` 项目内独立维护。
 
 ## 认证
 
