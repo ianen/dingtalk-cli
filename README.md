@@ -89,4 +89,14 @@ python3 -m build
 python3 -m twine check dist/*
 ```
 
+公开 skill 分发命令：
+
+```bash
+# skills.sh 官方链路
+npx skills add ianen/dingtalk-cli
+
+# ClawHub 安装链路
+npx clawhub install dingtalk-cli
+```
+
 详细发布流程见 [RELEASE.md](RELEASE.md)。

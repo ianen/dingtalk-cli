@@ -16,10 +16,10 @@ description: 当用户提到钉钉知识库、钉钉文档、读取/写入文档
 ## 安装
 
 ```bash
-pip install -e /path/to/dingtalk-cli
+pip install dingtalk-cli
 ```
 
-或在仓库根目录直接：
+如需从源码开发安装：
 
 ```bash
 pip install -e .
