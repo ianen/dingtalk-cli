@@ -5,6 +5,12 @@
 ## 安装
 
 ```bash
+pip install dingtalk-cli
+```
+
+从源码开发安装：
+
+```bash
 pip install -e .
 ```
 
@@ -73,3 +79,14 @@ dingtalk-cli workbook read --node-id <NODE_ID> --range A1:Z80
 - 写命令都需要显式 `--yes`
 - `doc read` 遇到 `.axls` 会返回结构化错误并指向 `workbook` 命令
 - REPL 启动横幅会展示内置 `SKILL.md` 的绝对路径
+
+## 对外分发
+
+标准构建命令：
+
+```bash
+python3 -m build
+python3 -m twine check dist/*
+```
+
+详细发布流程见 [RELEASE.md](RELEASE.md)。

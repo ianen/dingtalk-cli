@@ -1,0 +1,8 @@
+include README.md
+include AGENTS.md
+include CHANGELOG.md
+include LICENSE
+recursive-include dingtalk_cli/skills *.md
+recursive-include references *.md
+recursive-include tests *.md *.py
+global-exclude __pycache__ *.py[cod]

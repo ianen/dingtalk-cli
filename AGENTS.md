@@ -36,3 +36,7 @@
 
 - 合并前至少完成一次安装验证：`python3 -m pip install -e .`
 - 合并时同步维护 `README.md`、`AGENTS.md`、`tests/TEST.md`
+- 对外发布前同步维护 `CHANGELOG.md`、`RELEASE.md`
+- 发布构建使用：
+  - `python3 -m build`
+  - `python3 -m twine check dist/*`
