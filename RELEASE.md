@@ -52,10 +52,40 @@ python3 -m twine upload dist/*
 - 推送 `v*` tag 时自动构建
 - 使用 PyPI Trusted Publisher 发布
 
+## Skill 市场分发
+
+### skills.sh
+
+`skills.sh` 通过官方 `skills` CLI 安装事件完成索引与展示，不走单独上传表单：
+
+```bash
+npx skills add ianen/dingtalk-cli --list
+npx skills add ianen/dingtalk-cli -g -a '*' -s '*' -y
+```
+
+### ClawHub
+
+使用官方 `clawhub` CLI 发布公开 skill 包：
+
+```bash
+npx clawhub publish dingtalk_cli/skills \
+  --slug dingtalk-cli \
+  --name "dingtalk-cli" \
+  --version <skill_version> \
+  --changelog "<release_note>"
+```
+
+发布前确认 `dingtalk_cli/skills/SKILL.md` 已改为公开安装方式：
+
+```bash
+pip install dingtalk-cli
+```
+
 ## 版本发布建议
 
 1. 更新 `dingtalk_cli/__init__.py` 版本号
 2. 更新 `CHANGELOG.md`
-3. 提交发布变更
-4. 打 tag，如 `v1.0.0`
-5. 构建并上传
+3. 验证 `skills.sh` / `ClawHub` 分发链路
+4. 提交发布变更
+5. 打 tag，如 `v1.0.0`
+6. 构建并上传

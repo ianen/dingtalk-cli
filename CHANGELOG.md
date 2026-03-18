@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## Unreleased
+
+- 调整公开 `SKILL.md` 安装说明，默认走 `pip install dingtalk-cli`
+- 补充 `skills.sh` / `ClawHub` 分发与验证文档
+
 ## V1.0.0
 
 - 首次发布 `dingtalk-cli`

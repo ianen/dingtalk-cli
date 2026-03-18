@@ -128,3 +128,11 @@ tests/test_full_e2e.py: 4 passed
 
 - 本轮覆盖了配置、CLI 参数、JSON 输出、写操作保护、文档/表格类型分流、成员 payload 和子进程入口。
 - 真实钉钉 API E2E 已完成认证、知识库读取、文档生命周期和 workbook 读取验证。
+
+## Distribution Verification
+
+- `pip install dingtalk-cli`：验证公开安装入口可用
+- `npx skills add ianen/dingtalk-cli --list`：验证 `skills` CLI 能识别仓库中的 `dingtalk-cli` skill
+- `npx skills add ianen/dingtalk-cli -g -a '*' -s '*' -y`：验证 `skills.sh` 官方安装链路可执行
+- `npx clawhub whoami`：验证 ClawHub 发布凭证有效
+- `npx clawhub publish dingtalk_cli/skills ...`：验证 ClawHub 技能包可上传
